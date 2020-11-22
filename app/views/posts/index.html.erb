@@ -1,0 +1,8 @@
+<% @posts.each do |post| %>
+    <div id="picture-<%= post.id %>%">
+    <%= image_tag(url_for(post.picture), width: 600) %><br />
+    <%= post.caption %>
+    </div>
+<% end %>
+<br />
+<%= link_to "New", new_post_path %>
