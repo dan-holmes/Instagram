@@ -1,24 +1,15 @@
-# README
+# Instagram
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an incomplete solution to the Makers end of unit challenge for week 8.
 
-Things you may want to cover:
+Features:
+ - Adds pictures with captions using Rails.
+ - Stores pictures locally using Rails Active Storage
+ - Handles sign ups and log ins using Devise
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Known issues:
+ - Had issues with Webpacker. This caused massive delays and has meant I've had to disable Javascript for the time being. This has in turn impacted the method override on the log out button to stop that working.
+ - There are currently no tests due to lack of time.
+ - Missing features: comments, likes and post ownership.
+ - No CSS styling yet.
+ - Naming of pages, naming of project folder, unused welcome page.
