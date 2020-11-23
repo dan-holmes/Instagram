@@ -1,15 +1,17 @@
+<header>
 <% if user_signed_in? %>
   Logged in with <%= current_user.email %>. <%= link_to "Log out", destroy_user_session_path %>
-  <%= link_to "New Post", new_post_path %>
+  <div id='new-post'><%= link_to "New Post", new_post_path %></div>
 <% else %>
   <%= link_to "Log in", user_session_path %>
 <% end %>
+</header>
 
 <% @posts.each do |post| %>
-    <div id="picture-<%= post.id %>%">
+    <div id="post-<%= post.id %>%" class="post">
+    <div class="caption"><%= post.caption %></div>
     <%= image_tag(url_for(post.picture), width: 600) %><br />
-    <%= post.caption %>
-    <%= post.user.email %>
+    <div class="email"><%= post.user.email %></div>
     </div>
 <% end %>
 <br />
