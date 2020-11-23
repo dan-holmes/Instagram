@@ -11,3 +11,19 @@ Features:
  - Had issues with Webpacker. This caused massive delays and has meant I've had to disable Javascript for the time being. This has in turn impacted the method override on the log out button to stop that working.
  - There are currently no tests due to lack of time.
  - Missing features: comments and likes.
+
+ ## Installation
+
+ Prerequisites:
+ Ruby
+ Sqlite3
+ Rails
+ Node
+ Yarn
+
+ ```
+$ rails db:migrate
+$ rails server
+ ```
+
+ Visit ``localhost:3000`` in your browser.
